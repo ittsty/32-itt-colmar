@@ -10,10 +10,6 @@ h2 {
     font-weight: 500;
 }
 
-.info {
-    height: 100%;
-}
-
 .navItem {
     height: 100%;
     flex-grow: 1;
@@ -40,7 +36,10 @@ a,button{
     padding-top: 32px;
     padding-bottom: 16px;
 }
-
+.card{
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
 @media (min-width: 768px) {
     .navText {
         display: inline;
@@ -70,5 +69,8 @@ a,button{
         text-align: center;
         padding-top: 0px;
         padding-bottom:32px;
+    }
+    .card{
+        background-color: white;
     }
 }
