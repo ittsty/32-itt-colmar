@@ -23,29 +23,32 @@
   </head>
 
   <body class="w-screen min-h-dvh max-w-dvw">
-    <header class="nevbar h-16 bg-cyan-100">
-      <h4>HEADER</h4>
+    <header class="flex  nevbar h-16">
+      <button class="h-full grow"><img class="inline-block" src="/images/ic-logo.svg" /></button>
+      <button class="h-full grow"><img class="inline-block" src="/images/ic-on-campus.svg" /></button>
+      <button class="h-full grow"><img class="inline-block"src="/images/ic-online.svg" /></button>
+      <button class="h-full grow"><img class="inline-block" src="/images/ic-login.svg" /></button>
     </header>
     <main>
-      <section class="hero md:py-6 bg-gray-300">
+      <section class="hero md:py-6 bg-gray-200">
         <div class="flex flex-col md:py-2 md:mx-6 md:items-center md:flex-row">
           <div class="imgHolder md:max-w-6/10">
             <img src="/images/banner.jpg" />
           </div>
           <div class="heroDesc px-4 md:p-0 md:mx-6 md:max-w-4/10 md:max-h-fit">
-            <h1>Learn something<br />new every day</h1>
+            <h1 class="mt-8 md:mt-0">Learn something<br />new every day</h1>
             <h2 class="text-2xl mt-8">
               Lorem ipsum dolor sit amet,<br />
               consectetur adipisicing elit.
             </h2>
-            <button class="w-full mt-6 mb-8 bg-slate-400">Start Here</button>
+            <button class="w-full mt-6 mb-8 bg-gray-400 text-white">Start Here</button>
           </div>
         </div>
       </section>
 
-      <section class="information p-4 md:p-0 md:py-8 bg-red-400">
+      <section class="information p-4 md:p-0 md:py-8 bg-white">
         <div class="flex flex-col md:mx-6 md:items-center md:flex-row">
-          <div class="imgHolder hidden  md:w-6/10 md:block">
+          <div class="imgHolder hidden md:w-6/10 md:block">
             <img src="/images/information-main.jpg" />
             <h1>It's doesn't hert to parcticing</h1>
             <p>
@@ -56,25 +59,25 @@
             </p>
             <p><br />Emanuel, Sr Strategist at Hiring.com</p>
           </div>
-          <div class="flex-col bg-cyan-200 md:w-4/10 md:h-max">
-            <div class="itemHolder md:flex">
+          <div class="info_RC flex-col md:pl-4 md:w-4/10">
+            <div class="itemHolder md:my-4 md:flex">
               <div class="imgHolder md:w-35/100">
                 <img
                   class="md:hidden"
-                  src="/images/information-campus-mobile.jpg"
+                  src="/images/information-orientation-mobile.jpg"
                 />
                 <img
                   class="hidden md:inline"
-                  src="/images/information-campus.jpg"
+                  src="/images/information-orientation.jpg"
                 />
               </div>
               <div class="desc p-4 mb-12 md-inline">
-                <h2>Our Campus</h2>
-                <h3>Find which is close by you</h3>
+                <h2>Orientation Date</h2>
+                <h3>Tue 10/11 - Wed 10/12: 8am-3pm</h3>
                 <a class="text-blue-500"> Read more</a>
               </div>
             </div>
-            <div class="itemHolder md:flex">
+            <div class="itemHolder md:my-4 md:flex">
               <div class="imgHolder max-w-screen-md md:w-35/100">
                 <img
                   class="md:hidden"
@@ -91,39 +94,69 @@
                 <a class="text-blue-500"> Read more</a>
               </div>
             </div>
-            <div class="itemHolder md:flex">
+            <div class="itemHolder md:my-4 md:flex">
               <div class="imgHolder max-w-screen-md md:w-35/100">
                 <img
                   class="md:hidden"
-                  src="/images/information-campus-mobile.jpg"
+                  src="/images/information-guest-lecture-mobile.jpg"
                 />
                 <img
                   class="hidden md:inline"
-                  src="/images/information-campus.jpg"
+                  src="/images/information-guest-lecture.jpg"
                 />
               </div>
-              <div class="desc p-4 md-inline">
-                <h2>Our Campus</h2>
-                <h3>Find which is close by you</h3>
+              <div class="desc p-4 md:max-w-65/100 md-inline">
+                <h2>Special Guest Lecture</h2>
+                <h3>Join a keynote with Oliver Sack about music in medical treatment </h3>
                 <a class="text-blue-500"> Read more</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="course bg bg-slate-200 h-170">
+
+      <section class="course mt-0">
         <div>
-          <h4>course</h4>
+          <div class="pt-8 pb-4 text-center">
+            <h1>Start Learning</h1>
+          </div>
+
+          <div class="pb-8 grid gap-2 px-4">
+            <div class="bg-gray-300 px-4 pt-4 pb-6">
+              <h2>Software engiineering</h2>
+            </div>
+            <div class="bg-gray-300 px-4 pt-4 pb-6">
+              <h2>Computer Art</h2>
+            </div>
+            <div class="bg-gray-300 px-4 pt-4 pb-6">
+              <h2>Design</h2>
+            </div>
+            <div class="bg-gray-300 px-4 pt-4 pb-6">
+              <h2>Data</h2>
+            </div>
+            <div class="bg-gray-300 px-4 pt-4 pb-6">
+              <h2>Bussiness</h2>
+            </div>
+            <div class="bg-gray-300 px-4 pt-4 pb-6">
+              <h2>Market</h2>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="thesis bg-green-200 h-170">
+
+      <section class="thesis">
         <div>
-          <h4>thesis</h4>
+          <div class="pt-8 pb-4 text-center">
+            <h1>Thesis exhibits</h1>
+          </div>
+          <div class="vodHolder pb-6">
+            <video src="/videos/thesis.mp4"></video>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="footer max-">
-      <h3>corlar academy all right reserved</h3>
+    <footer class="footer p-4">
+      <h3>© corlar academy all right reserved</h3>
     </footer>
   </body>
 </html>
