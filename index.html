@@ -46,11 +46,11 @@
     </header>
     <main>
       <section class="hero bg-gray-200">
-        <div class="flex flex-col md:py-2 md:mx-6 md:items-center md:flex-row">
+        <div class="heroLC flex flex-col md:py-2 md:mx-6 md:items-center md:flex-row">
           <div class="imgHolder md:max-w-6/10">
-            <img src="/images/banner.jpg" />
+            <img src="/images/banner.jpg" alt="banner_pic" />
           </div>
-          <div class="heroDesc px-4 md:p-0 md:mx-6 md:max-w-4/10 md:max-h-fit">
+          <div class="heroRC px-4 md:p-0 md:mx-6 md:max-w-4/10 md:max-h-fit">
             <h1 class="mt-8 md:mt-0">Learn something<br />new every day</h1>
             <h2 class="text-2xl mt-8">
               Lorem ipsum dolor sit amet,<br />
@@ -63,9 +63,9 @@
         </div>
       </section>
       <section class="information bg-white">
-        <div class="flex flex-col md:mx-6 md:items-start md:flex-row">
+        <div class="infoLC flex flex-col md:mx-6 md:items-start md:flex-row">
           <div class="imgHolder hidden md:w-6/10 md:inline-block">
-            <img src="/images/information-main.jpg" />
+            <img src="/images/information-main.jpg" alt="info_pic" />
             <h1 class="pt-8">It's doesn't hert to parcticing</h1>
             <p class="mt-6">
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -75,16 +75,18 @@
             </p>
             <p><br />Emanuel, Sr Strategist at Hiring.com</p>
           </div>
-          <div class="info_RC flex-col m-4 md:m-0 md:pt-0 md:pl-4 md:w-4/10">
+          <div class="infoRC flex-col m-4 md:m-0 md:pt-0 md:pl-4 md:w-4/10">
             <div class="itemHolder md:pb-4 md:pl-4 md:flex">
               <div class="imgHolder md:w-35/100">
                 <img
                   class="md:hidden"
                   src="/images/information-orientation-mobile.jpg"
+                  alt="Orientation_pic"
                 />
                 <img
                   class="hidden md:inline"
                   src="/images/information-orientation.jpg"
+                  alt="Orientation_pic"
                 />
               </div>
               <div class="desc p-4 mb-12 md-inline max-h-65/100">
@@ -98,10 +100,12 @@
                 <img
                   class="md:hidden"
                   src="/images/information-campus-mobile.jpg"
+                  alt="campus_pic"
                 />
                 <img
                   class="hidden md:inline"
                   src="/images/information-campus.jpg"
+                  alt="campus_pic"
                 />
               </div>
               <div class="desc p-4 mb-12 md-inline max-h-65/100">
@@ -115,10 +119,12 @@
                 <img
                   class="md:hidden"
                   src="/images/information-guest-lecture-mobile.jpg"
+                  alt="Oliver_Sack_pic"
                 />
                 <img
                   class="hidden md:inline"
                   src="/images/information-guest-lecture.jpg"
+                  alt="Oliver_Sack_pic"
                 />
               </div>
               <div class="desc p-4 md:max-w-65/100 md-inline">
@@ -134,82 +140,89 @@
         </div>
       </section>
       <section class="course md:bg-gray-200">
-          <div class="secHeading">
-            <h1>Start Learning</h1>
-          </div>
-          <div class="pb-8 grid gap-2 px-4 md:grid-cols-3 md:gap-8 md:px-18">
-            <div class="card px-4 pt-4 pb-6 md:p-0">
-              <div class="imgHolder hidden md:block">
-                <img src="images/course-software.jpg" />
-              </div>
-              <h2 class="md:mt-4 md:ml-4">Software engiineering</h2>
-              <div class="courseDesc px-4 hidden md:block">
-                <h3 class="my-2">COURSE</h3>
-                <h3>Web development, mobile development, iOTs, APIs</h3>
-              </div>
+        <div class="secHeading">
+          <h1>Start Learning</h1>
+        </div>
+        <div class="cardContainer grid gap-2 px-4 pb-8 md:grid-cols-3 md:gap-8 md:px-18">
+          <div class="card px-4 pt-4 pb-6 md:p-0">
+            <div class="imgHolder hidden md:block">
+              <img src="images/course-software.jpg" alt="coding_pic" />
             </div>
-            <div class="card px-4 pt-4 pb-6 md:p-0">
-              <div class="imgHolder hidden md:block">
-                <img src="images/course-computer-art.jpg" />
-              </div>
-              <h2 class="md:mt-4 md:ml-4">Computer Art</h2>
-              <div class="courseDesc px-4 mb-6 hidden md:block">
-                <h3 class="my-2">COURSE</h3>
-                <h3>
-                  imaging & Design, Web Design, Motion Graphics & Visual
-                  Effects, Computer Animetion
-                </h3>
-              </div>
-            </div>
-            <div class="card px-4 pt-4 pb-6 md:p-0">
-              <div class="imgHolder hidden md:block">
-                <img src="images/course-design.jpg" />
-              </div>
-              <h2 class="md:mt-4 md:ml-4">Design</h2>
-              <div class="courseDesc px-4 mb-6 hidden md:block">
-                <h3 class="my-2">COURSE</h3>
-                <h3>User Experience Design, User Research, Visual Design</h3>
-              </div>
-            </div>
-            <div class="card px-4 pt-4 pb-6 md:p-0">
-              <div class="imgHolder hidden md:block">
-                <img src="images/course-data.jpg" />
-              </div>
-              <h2 class="md:mt-4 md:ml-4">Data</h2>
-              <div class="courseDesc px-4 mb-6 hidden md:block">
-                <h3 class="my-2">COURSE</h3>
-                <h3>Data Science, Big Data, SQL, Data Visualization</h3>
-              </div>
-            </div>
-            <div class="card px-4 pt-4 pb-6 md:p-0">
-              <div class="imgHolder hidden md:block">
-                <img src="images/course-business.jpg" />
-              </div>
-              <h2 class="md:mt-4 md:ml-4">Bussiness</h2>
-              <div class="courseDesc px-4 mb-6 hidden md:block">
-                <h3 class="my-2">COURSE</h3>
-                <h3>Product Development, Business Development, Startup</h3>
-              </div>
-            </div>
-            <div class="card px-4 pt-4 pb-6 md:p-0">
-              <div class="imgHolder hidden md:block">
-                <img src="images/course-marketing.jpg" />
-              </div>
-              <h2 class="md:mt-4 md:ml-4">Marketing</h2>
-              <div class="courseDesc px-4 mb-6 hidden md:block">
-                <h3 class="my-2">COURSE</h3>
-                <h3>Analytics, Content Marketing, Mobile Marketing</h3>
-              </div>
+            <h2 class="md:mt-4 md:ml-4">Software engiineering</h2>
+            <div class="courseDesc px-4 hidden md:block">
+              <h3 class="my-2">COURSE</h3>
+              <h3>Web development, mobile development, iOTs, APIs</h3>
             </div>
           </div>
+          <div class="card px-4 pt-4 pb-6 md:p-0">
+            <div class="imgHolder hidden md:block">
+              <img
+                src="images/course-computer-art.jpg"
+                alt="computer_art_pic"
+              />
+            </div>
+            <h2 class="md:mt-4 md:ml-4">Computer Art</h2>
+            <div class="courseDesc px-4 mb-6 hidden md:block">
+              <h3 class="my-2">COURSE</h3>
+              <h3>
+                imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                Computer Animetion
+              </h3>
+            </div>
+          </div>
+          <div class="card px-4 pt-4 pb-6 md:p-0">
+            <div class="imgHolder hidden md:block">
+              <img src="images/course-design.jpg" alt="design_pic" />
+            </div>
+            <h2 class="md:mt-4 md:ml-4">Design</h2>
+            <div class="courseDesc px-4 mb-6 hidden md:block">
+              <h3 class="my-2">COURSE</h3>
+              <h3>User Experience Design, User Research, Visual Design</h3>
+            </div>
+          </div>
+          <div class="card px-4 pt-4 pb-6 md:p-0">
+            <div class="imgHolder hidden md:block">
+              <img src="images/course-data.jpg" alt="data_analys_pic" />
+            </div>
+            <h2 class="md:mt-4 md:ml-4">Data</h2>
+            <div class="courseDesc px-4 mb-6 hidden md:block">
+              <h3 class="my-2">COURSE</h3>
+              <h3>Data Science, Big Data, SQL, Data Visualization</h3>
+            </div>
+          </div>
+          <div class="card px-4 pt-4 pb-6 md:p-0">
+            <div class="imgHolder hidden md:block">
+              <img src="images/course-business.jpg" alt="Business_pic" />
+            </div>
+            <h2 class="md:mt-4 md:ml-4">Bussiness</h2>
+            <div class="courseDesc px-4 mb-6 hidden md:block">
+              <h3 class="my-2">COURSE</h3>
+              <h3>Product Development, Business Development, Startup</h3>
+            </div>
+          </div>
+          <div class="card px-4 pt-4 pb-6 md:p-0">
+            <div class="imgHolder hidden md:block">
+              <img src="images/course-marketing.jpg" alt="marketing_pic" />
+            </div>
+            <h2 class="md:mt-4 md:ml-4">Marketing</h2>
+            <div class="courseDesc px-4 mb-6 hidden md:block">
+              <h3 class="my-2">COURSE</h3>
+              <h3>Analytics, Content Marketing, Mobile Marketing</h3>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="thesis">
         <div class="secHeading">
           <h1>Thesis exhibits</h1>
         </div>
-        <div class="flex flex-col md:mx-6 md:items-start md:flex-row">
+        <div class="thesisLC flex flex-col md:mx-6 md:items-start md:flex-row">
           <div class="vodHolder mb-6 md:w-6/10 md:inline-block">
-            <video src="videos/thesis.mp4" controls></video>
+            <video
+              src="videos/thesis.mp4"
+              alt="render_buliding_vdo"
+              controls
+            ></video>
             <div class="textContainer hidden md:block">
               <h1 class="pt-6">Reimagine urban</h1>
               <p class="mt-6">
@@ -223,7 +236,11 @@
           <div class="thesisRC flex-col md:pl-8 md:w-4/10">
             <div class="itemHolder hidden md:bg-gray-100 md:p-4 md:flex">
               <div class="imgHolder md:w-35/100">
-                <img class="hidden md:inline" src="/images/thesis-fisma.jpg" />
+                <img
+                  class="hidden md:inline"
+                  src="/images/thesis-fisma.jpg"
+                  alt="thesis_pic"
+                />
               </div>
               <div class="descHolder max-w-65/100 p-4 md-inline">
                 <h2>Fisma: Design and Prototype</h2>
@@ -235,6 +252,7 @@
                 <img
                   class="hidden md:inline"
                   src="/images/thesis-now-and-then.jpg"
+                  alt="ne_york_pic"
                 />
               </div>
               <div class="descHolder max-w-65/100 p-4 md-inline">

@@ -40,6 +40,7 @@ a,button{
     --tw-bg-opacity: 1;
     background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
 }
+
 @media (min-width: 768px) {
     .navText {
         display: inline;
