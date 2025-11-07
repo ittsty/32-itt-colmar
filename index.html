@@ -22,15 +22,30 @@
     </style>
   </head>
 
-  <body class="w-screen min-h-dvh max-w-dvw">
-    <header class="flex  nevbar h-16">
-      <button class="h-full grow"><img class="inline-block" src="/images/ic-logo.svg" /></button>
-      <button class="h-full grow"><img class="inline-block" src="/images/ic-on-campus.svg" /></button>
-      <button class="h-full grow"><img class="inline-block"src="/images/ic-online.svg" /></button>
-      <button class="h-full grow"><img class="inline-block" src="/images/ic-login.svg" /></button>
+  <body class="min-h-dvh max-w-dvw">
+    <header class="flex nevbar h-16">
+      <button class="navItem md:mx-6">
+        <img class="inline" src="/images/ic-logo.svg" />
+        <a class="navText">COLMARACADEMY</a>
+      </button>
+      <button class="navItem md:ml-auto md:mr-4">
+        <img class="icon" src="/images/ic-on-campus.svg" />
+        <a class="navText">On campus</a>
+      </button>
+      <button class="navItem md:mr-4">
+        <img class="icon" src="/images/ic-online.svg" />
+        <a class="navText">Online</a>
+      </button>
+      <button class="navItem hidden md:mr-4 md:block">
+        <a class="navText">For Companies</a>
+      </button>
+      <button class="navItem md:mr-4">
+        <img class="icon" src="/images/ic-login.svg" />
+        <a class="navText">Login</a>
+      </button>
     </header>
     <main>
-      <section class="hero md:py-6 bg-gray-200">
+      <section class="hero bg-gray-200">
         <div class="flex flex-col md:py-2 md:mx-6 md:items-center md:flex-row">
           <div class="imgHolder md:max-w-6/10">
             <img src="/images/banner.jpg" />
@@ -41,17 +56,18 @@
               Lorem ipsum dolor sit amet,<br />
               consectetur adipisicing elit.
             </h2>
-            <button class="w-full mt-6 mb-8 bg-gray-400 text-white">Start Here</button>
+            <button class="w-full mt-6 mb-8 p-2 bg-gray-400 text-white">
+              Start Here
+            </button>
           </div>
         </div>
       </section>
-
-      <section class="information p-4 md:p-0 md:py-8 bg-white">
-        <div class="flex flex-col md:mx-6 md:items-center md:flex-row">
-          <div class="imgHolder hidden md:w-6/10 md:block">
+      <section class="information mt-4 px-4 bg-white">
+        <div class="flex flex-col md:mx-6 md:items-start md:flex-row">
+          <div class="imgHolder hidden md:w-6/10 md:inline-block">
             <img src="/images/information-main.jpg" />
-            <h1>It's doesn't hert to parcticing</h1>
-            <p>
+            <h1 class="pt-8">It's doesn't hert to parcticing</h1>
+            <p class="mt-6">
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               explicabo impedit vero beatae ad iure sunt! Alias similique
               consequatur reiciendis laborum et numquam mollitia ex,
@@ -60,7 +76,7 @@
             <p><br />Emanuel, Sr Strategist at Hiring.com</p>
           </div>
           <div class="info_RC flex-col md:pl-4 md:w-4/10">
-            <div class="itemHolder md:my-4 md:flex">
+            <div class="itemHolder md:pb-4 md:pl-4 md:flex">
               <div class="imgHolder md:w-35/100">
                 <img
                   class="md:hidden"
@@ -77,7 +93,7 @@
                 <a class="text-blue-500"> Read more</a>
               </div>
             </div>
-            <div class="itemHolder md:my-4 md:flex">
+            <div class="itemHolder md:py-4 md:pl-4 md:flex">
               <div class="imgHolder max-w-screen-md md:w-35/100">
                 <img
                   class="md:hidden"
@@ -94,7 +110,7 @@
                 <a class="text-blue-500"> Read more</a>
               </div>
             </div>
-            <div class="itemHolder md:my-4 md:flex">
+            <div class="itemHolder mb-4 md:py-4 md:pl-4 md:flex md:bg-gray-100">
               <div class="imgHolder max-w-screen-md md:w-35/100">
                 <img
                   class="md:hidden"
@@ -107,17 +123,19 @@
               </div>
               <div class="desc p-4 md:max-w-65/100 md-inline">
                 <h2>Special Guest Lecture</h2>
-                <h3>Join a keynote with Oliver Sack about music in medical treatment </h3>
+                <h3>
+                  Join a keynote with Oliver Sack about music in medical
+                  treatment
+                </h3>
                 <a class="text-blue-500"> Read more</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="course mt-0">
+      <section class="course bg-gray-200">
         <div>
-          <div class="pt-8 pb-4 text-center">
+          <div class="secHeading">
             <h1>Start Learning</h1>
           </div>
 
@@ -145,18 +163,55 @@
       </section>
 
       <section class="thesis">
-        <div>
-          <div class="pt-8 pb-4 text-center">
-            <h1>Thesis exhibits</h1>
+        <div class="secHeading">
+          <h1>Thesis exhibits</h1>
+        </div>
+        <div class="flex flex-col md:mx-6 md:items-start md:flex-row">
+          <div class="vodHolder mb-6 md:w-6/10 md:inline-block">
+            <video src="videos/thesis.mp4"></video>
+            <div class="textContainer hidden md:block">
+              <h1 class="pt-8">Reimagine urban</h1>
+              <p class="mt-6">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                explicabo impedit vero beatae ad iure sunt! Alias similique
+                consequatur reiciendis laborum et numquam mollitia ex,
+                voluptatibus quas, doloremque corporis laudantium."
+              </p>
+            </div>
           </div>
-          <div class="vodHolder pb-6">
-            <video src="/videos/thesis.mp4"></video>
+          <div class="info_RC flex-col md:pl-8 md:w-4/10">
+            <div class="itemHolder hidden md:bg-gray-100 md:pb-4 md:flex">
+              <div class="imgHolder md:w-35/100">
+                <img
+                  class="hidden md:inline"
+                  src="/images/thesis-fisma.jpg"
+                />
+              </div>
+              <div class="desc max-w-65/100 p-4 mb-12 md-inline">
+                <h2>Fisma: Design and Prototype</h2>
+                <h3>Designer Showcase of new prototype product</h3>
+              </div>
+            </div>
+            <div class="itemHolder hidden  md:py-4 md:flex">
+              <div class="imgHolder max-w-screen-md md:w-35/100">
+                <img
+                  class="hidden md:inline"
+                  src="/images/thesis-now-and-then.jpg"
+                />
+              </div>
+              <div class="desc max-w-65/100 p-4 mb-12 md-inline">
+                <h2>Now and then</h2>
+                <h3>Research about New York</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer p-4">
-      <h3>© corlar academy all right reserved</h3>
+    <footer class="footer p-4 flex">
+      <h3 class="md:ml-6 text-gray-500">© corlar academy all right reserved</h3>
+      <a class="hidden md:block md:ml-auto text-gray-500">Terms</a>
+      <a class="hidden md:block md:ml-4 md:mr-6 text-gray-500">Privacy</a>
     </footer>
   </body>
 </html>

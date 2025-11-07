@@ -1,16 +1,74 @@
-h1{
-    font-size: 2.25rem /* 36px */;
-    line-height: 2.5rem /* 40px */;
+h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
     font-weight: 600;
 }
-h2{
-    font-size: 1.5rem /* 24px */;
-    line-height: 2rem /* 32px */;
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 500;
 }
-button{
-    padding: 8px;
-}
-.info{
+
+.info {
     height: 100%;
+}
+
+.navItem {
+    height: 100%;
+    flex-grow: 1;
+}
+
+.navItem:hover {
+    background-color: rgb(242, 242, 242);
+    cursor: pointer;
+}
+
+a,button{
+    cursor: pointer;
+}
+.icon {
+    display: inline;
+}
+
+.navText {
+    display: none;
+}
+
+.secHeading {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .navText {
+        display: inline;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .navItem {
+        height: 32px;
+        flex-grow: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .hero,
+    .information,
+    .course,
+    .thesis {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .secHeading {
+
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom:32px;
+    }
 }
